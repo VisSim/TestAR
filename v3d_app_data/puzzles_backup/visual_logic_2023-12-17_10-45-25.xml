@@ -1,0 +1,57 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="19.999999999999943" scrolly="-45" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="77i!?Hn$8Dslf-}?x)(V" x="130" y="50">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="[/,?(=S/y61G`tVAvMHj" x="130" y="270">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">background</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="z79E_+lc]vW~S!ytHy|m">
+          <field name="TEXT">#DCDCDC</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="b^)CA(s!cI^40R`hb0{u">
+          <field name="TEXT">.v3d-simple-preloader-background</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <tab name="Main" type="CommonTab" active="true" scrollx="20" scrolly="0" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="checkARMode" id=")oN{/h-Q%#ND^J^7Ye4G" x="230" y="110">
+      <statement name="DO_AVAIL">
+        <block type="eventHTMLElem" id="NG@_y?]c6?{VS_ObDOrp">
+          <field name="EVENT">pointerup</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="c[]Bf+9napOR%smkW,e`">
+              <field name="TEXT">enter_AR_button</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="enterARMode" id="?Nq]vg{r/+-+bIm2SnkD">
+              <field name="REF_SPACE">ORIGIN</field>
+              <field name="ALLOW_HTML">TRUE</field>
+              <statement name="DO_ENTER">
+                <block type="show" id="%ZDdEV=E2k*E9pbZ9|j)">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="i/,`flG{BqV8+qxr7L/e">
+                      <field name="FIELDNAME">prompt_move_around</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="750" viewport-y="37" viewport-w="512" viewport-h="285.5" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

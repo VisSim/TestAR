@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated -->
+<html lang="en">
+<head>
+  <title>Augmented Reality Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verge3D Web Interactive">
+  <meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verge3D Web Interactive">
+  <meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <meta property="og:type" content="website">
+
+  <meta name="generator" content="Verge3D 4.4.0">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="media/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#0048a5">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <script src="v3d.js"></script>
+  <script src="ARDemo.js" type="module"></script>
+
+  <link rel="stylesheet" type="text/css" href="ARDemo.css">
+</head>
+
+<body>
+
+  <div class="center-container">
+    <h1>AR Demo</h1>
+    <img src="./media/Truck.png" alt="Centered Image">
+  </div>
+
+  <div id="v3d-container" class="v3d-container">
+    <div id="fullscreen-button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
+  
+    <center>
+      <a id="enter_AR_button" class="enter-AR-button"><img id="enter_AR_img" src="./media/EnterAR.jpg"></a>
+    </center>
+    
+    <div id="warning_center" class="warning-center">
+      <div id="warning_AR_unavailable" class="warning-AR-unavailable">
+        <img id="warning_AR_unavailable_img" src="./media/warning_AR_unavailable.png">
+      </div>
+      <div id="warning_could_not_enter_AR" class="warning-could-not-enter-AR"></div>
+    </div>
+
+    <div><a id="info_button" class="info-button" href="./index.html">
+      <img id="info_button_img" src="./media/info.png"></a>
+    </div>
+
+    <div class="configurator-panel" >
+      <div class="buttons-panel">    
+        <div class="right-panel">             
+          <div class="circle-button" id="annotation" style="background-image: url('media/Annotation.png');"></div>
+          <div class="circle-button" id="reset" style="background-image: url('media/Refresh.png');"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>

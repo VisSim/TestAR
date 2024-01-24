@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AR Demo</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>      
+      document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.square-button, .circle-button');
+  
+        buttons.forEach(button => {
+          button.addEventListener('click', function () {
+            this.classList.toggle('clicked');
+  
+            // Reset the scale after a delay
+            setTimeout(() => {
+              this.classList.remove('clicked');
+            }, 100);    // Delay for scale reset
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>       
+    <iframe src="ARDemo.html" class="main-app" id="main_app"></iframe> 
+    
+  </body>
+</html>
+
